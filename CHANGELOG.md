@@ -1,5 +1,13 @@
 # Chat-box-app Changelog
 
+# [1.1.0](https://github.com/thuongnn/ga-npm/compare/v1.0.0...v1.1.0) (2022-10-19)
+
+
+### Features
+
+* **pencil:** add 'graphiteWidth' option ([096c745](https://github.com/thuongnn/ga-npm/commit/096c7452b17121ca8579f6e3084d493714fa75a8))
+* **pencil:** add 'graphiteWidth' option ([53ca283](https://github.com/thuongnn/ga-npm/commit/53ca2839c8462b5a93f644d564b68133eace8857))
+
 # 1.0.0 (2022-10-19)
 
 

@@ -26,16 +26,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: DryRun Semantic Release
-        uses: cycjimmy/semantic-release-action@v3
-        id: semantic
-        with:
-          dry_run: true
+      - name: Install semantic-release extra plugins
+        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
+      - run: npm run build --if-present
+      - run: npx semantic-release
 
-      - name: Update package.json
-        if: steps.semantic.outputs.new_release_published == 'true'
-        run: npm version ${{ steps.semantic.outputs.new_release_version }}
+      # - name: DryRun Semantic Release
+      #   uses: cycjimmy/semantic-release-action@v3
+      #   id: semantic
+      #   with:
+      #     dry_run: true
 
-      - name: Semantic Release
-        if: steps.semantic.outputs.new_release_published == 'true'
-        uses: cycjimmy/semantic-release-action@v3
+      # - name: Update package.json
+      #   if: steps.semantic.outputs.new_release_published == 'true'
+      #   run: npm version ${{ steps.semantic.outputs.new_release_version }}
+
+      # - name: Semantic Release
+      #   if: steps.semantic.outputs.new_release_published == 'true'
+      #   uses: cycjimmy/semantic-release-action@v3

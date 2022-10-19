@@ -1,5 +1,13 @@
 # Chat-box-app Changelog
 
+## [1.2.1](https://github.com/thuongnn/ga-npm/compare/v1.2.0...v1.2.1) (2022-10-19)
+
+
+### Bug Fixes
+
+* **pencil:** update release output ([1a3a719](https://github.com/thuongnn/ga-npm/commit/1a3a719e902ce22d48ec64a9e1f4adbfcc21102f))
+* **pencil:** update release output ([9d066ac](https://github.com/thuongnn/ga-npm/commit/9d066ac1c6dc8709895330212c9326e90971d4d5))
+
 # [1.2.0](https://github.com/thuongnn/ga-npm/compare/v1.1.0...v1.2.0) (2022-10-19)
 
 
